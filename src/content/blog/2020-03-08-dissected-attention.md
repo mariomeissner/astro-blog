@@ -614,7 +614,8 @@ plt.matshow(attention)
 
     <matplotlib.image.AxesImage at 0x1d78d10f588>
 
-![png]({{base.url}}/assets/images/dissected-attention/The%20Dissected%20Attention%20Network_80_1.png)
+<!-- ![png]({{base.url}}/assets/images/dissected-attention/The%20Dissected%20Attention%20Network_80_1.png) -->
+<img src='/src/assets/images/dissected-attention/The%20Dissected%20Attention%20Network_80_1.png'>
 
 For a more pleasant experience, where we label the axis with the actual words that composed the sentence, we can do something like the following.
 
@@ -650,4 +651,5 @@ ax.yaxis.set_major_locator(ticker.MultipleLocator(1))
 plt.show()
 ```
 
-![png]({{base.url}}/assets/images/dissected-attention/The%20Dissected%20Attention%20Network_83_0.png)
+<!-- ![png]({{base.url}}/assets/images/dissected-attention/The%20Dissected%20Attention%20Network_83_0.png) -->
+<img src='/src/assets/images/dissected-attention/The%20Dissected%20Attention%20Network_83_0.png'>
