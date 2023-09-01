@@ -6,7 +6,9 @@ tags:
   - technical
 ---
 
-This notebook is based on the Pytorch ["Translation with a Sequence to Sequence Network and Attention"](https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html) tutorial by Sean Robertson. Most of the code is taken from the original notebook, but "dissected". That means that many functions and classes will be stripped apart, and the internals analyzed. We will build a basic sequence to sequence network, while paying attention to the attention part (no pun intended).
+This post is a conversion from a Jupyter notebook to Markdown.
+
+This work is based on the "[Translation with a Sequence to Sequence Network and Attention](https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html)" tutorial by Sean Robertson. Most of the code is taken from the original notebook, but "dissected". That means that many functions and classes will be stripped apart, and the internals analyzed. We will build a basic sequence to sequence network, while paying attention to the attention part (no pun intended).
 
 Run it yourself on [Colab](https://colab.research.google.com/github/mariomeissner/mariomeissner.github.io/blob/master/assets/notebooks/dissected-attention-network.ipynb). I edited my commentary on the mardown version (here) after exporting, so the text of the runnable notebook differs slightly.
 
