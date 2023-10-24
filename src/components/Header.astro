@@ -20,7 +20,7 @@ const currentPath = Astro.url.pathname;
     <div class="top-nav-wrap">
       <a href="/" class="logo">
         {
-          currentPath !== '/' &&
+          currentPath !== "/" &&
             (LOGO_IMAGE.enable ? (
               <img
                 src={LOGO_IMAGE.svg ? logoSVG : logoPNG}
@@ -74,6 +74,9 @@ const currentPath = Astro.url.pathname;
             <a href="/hireme" class={activeNav === "hireme" ? "active" : ""}>
               Hire me
             </a>
+          </li>
+          <li>
+            <a href="/CV.pdf"> CV</a>
           </li>
           <li>
             <LinkButton
@@ -131,7 +134,7 @@ const currentPath = Astro.url.pathname;
     @apply relative flex w-full items-start justify-between p-4 h-8 sm:items-center sm:py-8;
   }
   .logo {
-    @apply absolute py-1 text-xl font-semibold sm:static sm:text-2xl;
+    @apply absolute py-1 text-lg font-semibold sm:static sm:text-xl;
   }
   .hamburger-menu {
     @apply self-end p-2 sm:hidden;
