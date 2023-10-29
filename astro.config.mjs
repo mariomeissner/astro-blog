@@ -4,12 +4,12 @@ import react from "@astrojs/react";
 import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import sitemap from "@astrojs/sitemap";
-import vercel from '@astrojs/vercel/serverless';
+import vercelStatic from '@astrojs/vercel/static';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://www.mariomeissner.dev/", // replace this with your deployed domain
-  output: "hybrid",
+  site: "https://www.mariomeissner.dev/",
+  output: "static",
   integrations: [
     tailwind({
       config: {
@@ -40,7 +40,7 @@ export default defineConfig({
       exclude: ["@resvg/resvg-js"],
     },
   },
-  adapter: vercel({
+  adapter: vercelStatic({
     webAnalytics: {
       enabled: true,
     },
