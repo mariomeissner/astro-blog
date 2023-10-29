@@ -9,7 +9,7 @@ import vercel from '@astrojs/vercel/serverless';
 // https://astro.build/config
 export default defineConfig({
   site: "https://www.mariomeissner.dev/", // replace this with your deployed domain
-  output: "server",
+  output: "hybrid",
   integrations: [
     tailwind({
       config: {
