@@ -4,11 +4,11 @@ import react from "@astrojs/react";
 import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import sitemap from "@astrojs/sitemap";
-import vercel from '@astrojs/vercel/serverless';
+import vercel from '@astrojs/vercel/static';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astro-paper.pages.dev/", // replace this with your deployed domain
+  site: "https://www.mariomeissner.dev/", // replace this with your deployed domain
   integrations: [
     tailwind({
       config: {
