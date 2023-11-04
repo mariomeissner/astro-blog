@@ -56,7 +56,7 @@ const currentPath = Astro.url.pathname;
             <line x1="6" y1="6" x2="18" y2="18" class="close"></line>
           </svg>
         </button>
-        <ul id="menu-items" class="display-none sm:flex">
+        <ul id="menu-items" class="hidden sm:flex">
           <li>
             <a href="/posts" class={activeNav === "posts" ? "active" : ""}>
               Posts
@@ -144,7 +144,7 @@ const currentPath = Astro.url.pathname;
     @apply flex w-full flex-col items-center sm:ml-2 sm:flex-row sm:justify-end sm:space-x-4 sm:py-0;
   }
   nav ul {
-    @apply mt-4 grid w-44 grid-cols-2 grid-rows-4 gap-x-2 gap-y-2 sm:ml-0 sm:mt-0 sm:w-auto sm:gap-x-5 sm:gap-y-0;
+    @apply mt-4 w-44 grid-cols-2 grid-rows-4 gap-x-2 gap-y-2 sm:ml-0 sm:mt-0 sm:w-auto sm:gap-x-5 sm:gap-y-0 sm:flex;
   }
   nav ul li {
     @apply col-span-2 flex items-center justify-center;
@@ -202,7 +202,6 @@ const currentPath = Astro.url.pathname;
     const menuItems = document.querySelector("#menu-items");
 
     menuBtn?.addEventListener("click", () => {
-      console.log("Clicked menu button")
       const menuExpanded = menuBtn.getAttribute("aria-expanded") === "true";
       menuIcon?.classList.toggle("is-active");
       menuBtn.setAttribute("aria-expanded", menuExpanded ? "false" : "true");
@@ -210,7 +209,8 @@ const currentPath = Astro.url.pathname;
         "aria-label",
         menuExpanded ? "Open Menu" : "Close Menu"
       );
-      menuItems?.classList.toggle("display-none");
+      menuItems?.classList.toggle("grid");
+      menuItems?.classList.toggle("hidden");
     });
   }
 
