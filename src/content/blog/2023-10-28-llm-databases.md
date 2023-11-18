@@ -11,22 +11,22 @@ So you want to start a project in 2023 or beyond, possibly with cool new LLM fea
 
 First of all, I collected a list of options that you might want to consider. Below that, I cover the main choices for each database type, and make some suggestions.
 
-| Database            | Open Source | Tech       | Main DB | Vector Store | Full text search | Free tier |
-| ------------------- | ----------- | ---------- | ------- | ------------ | ---------------- | --------- |
-| **Supabase**        | Yes         | PostgreSQL | Yes     | Yes          | Limited          | Good      |
-| **Planetscale**     | No          | MySQL      | Yes     | Soon         | Limited          | Good      |
-| **Firebase**        | No          | NoSQL      | Yes     | No           | Limited          | Regular   |
-| **DynamoDB**        | No          | NoSQL      | Yes     | No / Hacky   | Very limited     | Good      |
-| **Atlas (MongoDB)** | Yes         | NoSQL      | Yes     | Yes          | Regular          | Regular   |
-| **FaunaDB**         | No          | NoSQL      | Yes     | Hacky        | Limited          | Regular   |
-| **ElasticSearch**   | Yes         | NoSQL      | No      | Yes          | Very good        | No        |
-| **OpenSearch**      | Yes         | NoSQL      | No      | Yes          | Very good        | Very Good |
-| **Algolia**         | No          | NoSQL      | No      | No           | Yes              | Regular   |
-| **Meilisearch**     | Yes         | NoSQL      | No      | No           | Yes              | No        |
-| **Typesense**       | Yes         | NoSQL      | No      | Yes          | Yes              | No        |
-| **LanceDB**         | Yes         | NoSQL      | No      | Yes          | Limited          | No        |
-| **Pinecone**        | No          | NoSQL      | No      | Yes          | No               | Good      |
-| **Chroma**          | Yes         | NoSQL      | No      | Yes          | No               | No        |
+| Database                                         | Open Source | Tech       | Main DB | Vector Store | Full text search | Free tier |
+| ------------------------------------------------ | ----------- | ---------- | ------- | ------------ | ---------------- | --------- |
+| **[Supabase](https://supabase.com)**             | Yes         | PostgreSQL | Yes     | Yes          | Limited          | Good      |
+| **[Planetscale](https://planetscale.com)**       | No          | MySQL      | Yes     | Soon         | Limited          | Good      |
+| **[Firebase](https://firebase.google.com)**      | No          | NoSQL      | Yes     | No           | Limited          | Regular   |
+| **[DynamoDB](https://aws.amazon.com/dynamodb/)** | No          | NoSQL      | Yes     | No / Hacky   | Very limited     | Good      |
+| **[Atlas (MongoDB)](https://www.mongodb.com)**   | Yes         | NoSQL      | Yes     | Yes          | Regular          | Regular   |
+| **[FaunaDB](https://fauna.com)**                 | No          | NoSQL      | Yes     | Hacky        | Limited          | Regular   |
+| **[ElasticSearch](https://www.elastic.co)**      | Yes         | NoSQL      | No      | Yes          | Very good        | No        |
+| **[OpenSearch](https://opensearch.org)**         | Yes         | NoSQL      | No      | Yes          | Very good        | Very Good |
+| **[Algolia](https://www.algolia.com)**           | No          | NoSQL      | No      | No           | Yes              | Regular   |
+| **[Meilisearch](https://www.meilisearch.com)**   | Yes         | NoSQL      | No      | No           | Yes              | No        |
+| **[Typesense](https://typesense.org)**           | Yes         | NoSQL      | No      | Yes          | Yes              | No        |
+| **[LanceDB](https://lancedb.com)**               | Yes         | NoSQL      | No      | Yes          | Limited          | No        |
+| **[Pinecone](https://www.pinecone.io/pricing/)** | No          | NoSQL      | No      | Yes          | No               | Good      |
+| **[Chroma](https://www.trychroma.com)**          | Yes         | NoSQL      | No      | Yes          | No               | No        |
 
 ## Main DBs
 
