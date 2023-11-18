@@ -12,7 +12,7 @@ I had been to Japan before, 10 days and 2 months respectively, and I was dying t
 
 Stepping into a Japanese train is an experience in itself as well. Note that there are two types of trains in Japan, rush-hour-trains and a little-less-rush-hour-trains. Both are full of people and advertisements hanging from the ceiling but are possessed by a strange, deep silence. Everyone is looking at their phones, a few are reading books, and some do nothing at all, but rare is the occasion when someone raises their voice. There is a third type of train though, which only exists in the _inaka_, the Japanese far-lands. On those trains, there are more ghosts than people on board.
 
-<img src='@assets/images/japan-arrival/ghost-train.jpg' alt='An inaka train in Japan' >
+![An inaka train in Japan](@assets/images/japan-arrival/ghost-train.jpg)
 
 We headed to the hotel where all Vulcanusians were to stay the night (the hotel was quite nice!). My roommate was comfortably taking a nap in a yukata until my rude entrance brought him back to reality. A konbini dinner later, most of us went to sleep, as our schedule was full from sunrise on our second day. We were provided with an endless list of things that we should and should not do during our stay in Japan. Register at the town hall. Pay healthcare insurance. Write monthly reports. Do not be late for language school. Learn to "read the air". Once we were all drowned in information, we were more than ready to meet our supervisors (as ready as one can be with jet-lag, an empty stomach, and the nervousness and excitement of realizing that we will stay 1 year in this alien country).
 
@@ -20,7 +20,7 @@ From here on, the experience of each Vulcanusian was very different. According t
 
 Yokosuka is quite a cute town I have to say. It looks like a miniature version of a big city, has everything you could ask for, but smaller in size and with fewer people per square meter. I like it!
 
-<img src='@assets/images/japan-arrival/yokosuka.jpg' alt='Yokosuka Chuo'>
+![Yokosuka Chuo](@assets/images/japan-arrival/yokosuka.jpg)
 
 My room looks quite old and worn out, but is usable and comfortable. Having visited some other Vulcanusians at their dwellings in Edo, the differences were very noticable. They all had fancier rooms and usually more appliances and commodities. I win in square meters and size of my desk though. They also lack a certain charm that mine certainly does have (or at least this is what I tell myself to feel less jealous). I also had the chance to contact the previous Vulcanusian in Yokosuka, and got some essential items from him on day one: kitchen tools and bed sheets being the key here. I do not want to list bed-sheet shopping as my first independent activity in Yokosuka.
 
