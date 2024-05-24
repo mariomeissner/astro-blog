@@ -40,9 +40,4 @@ export default defineConfig({
       exclude: ["@resvg/resvg-js"],
     },
   },
-  adapter: vercelStatic({
-    webAnalytics: {
-      enabled: true,
-    },
-  }),
 });
