@@ -2,7 +2,7 @@
 title: "Deep Turing OCR: A Summary of my Bachelor's Thesis"
 description: Performing OCR on hand-written Turing Machines
 pubDatetime: 2019-11-03
-tags: 
+tags:
   - technical
 ---
 
@@ -12,8 +12,7 @@ A short introduction to my final thesis project: performing OCR on hand-written 
 
 I was attending a class on Models of Computation when the professor mentioned that it was very tedious to grade the final exams for this subject. One of the tasks (arguably the most important) is to write a Turing Machine by hand, capable of performing a specific operation (such as multiplication, division, exponentiation, etc). Each of these can have between 20 and 50 lines of state transition definitions, which look a bit like the following:
 
-<!-- ![pic]({{site.baseurl}}/assets/images/thesis_explained/single_box.png) -->
-<img src='/src/assets/images/thesis_explained/single_box.png' alt='A single transition definition'>
+![A single transition definition](@assets/images/thesis_explained/single_box.png)
 
 To evaluate the correctness of a Turing Machine, it is necessary to simulate it on a computer. The professor transcribed each Turing Machine manually into text, which could then be read by a simple simulator capable of checking if the machine is correct.
 
@@ -32,8 +31,7 @@ The code for this project can be found in [this repository](https://github.com/m
 
 A scan of a Turing Machine may look like the following:
 
-<!-- ![pic]({{site.baseurl}}/assets/images/thesis_explained/39.png)] -->
-<img src='/src/assets/images/thesis_explained/39.png' alt='A scan of a Turing Machine'>
+![A scan of a Turing Machine](@assets/images/thesis_explained/39.png)
 
 In total, in collaboration with my supervisor, we have gathered more than 30 exams, and about 1500 Turing Machine definition lines. Each of these lines had to be manually labelled. The label for each line is a string, containing around 15 to 20 characters on average (this took a very, very long time 😥).
 
@@ -45,8 +43,7 @@ To be able to go from scan to text, there are two steps to overcome. First, loca
 
 The model that I built performs character recognition on the individual, cropped lines. The structure used is a CRNN, whose details are described in [this paper](https://arxiv.org/abs/1507.05717). Basically, its a CNN followed by an RNN. First, the important features of the different characters in the image are extracted, and lined up as a sequence. Then, this sequence can be read by the RNN, which at the same time outputs character predictions. The whole thing is then trained using the [CTC loss](https://www.cs.toronto.edu/~graves/icml_2006.pdf).
 
-<!-- ![pic]({{site.baseurl}}/assets/images/thesis_explained/networklayers.png) -->
-<img src='/src/assets/images/thesis_explained/networklayers.png' alt='The network layers'>
+![The network layers](@assets/images/thesis_explained/networklayers.png)
 _The network layers._
 
 <!-- TODO: If you are interested in a more in depth look into the model, please feel free to have a look at my paper, linked in the top bar. -->
@@ -55,13 +52,11 @@ _The network layers._
 
 The system should be comfortable to use by people from any background. It should also be quick and assistive. Thus, I decided to wrap the scripts and the model into a backend, which offers an API to a web-based frontend. The user interacts with the model through an intuitive (yet visually rather mundane) interface, which looks like the following:
 
-<!-- ![pic]({{site.baseurl}}/assets/images/thesis_explained/interface3.png) -->
-<img src='/src/assets/images/thesis_explained/interface3.png' alt='The interface'>
+![The interface](@assets/images/thesis_explained/interface3.png)
 
 The user uploads a scan of a Turing Machine definition. Then they press the 'Get Boxes' button to obtain bounding boxes around the text. Those boxes can be resized and deleted on demand in case the predictions contained mistakes (Tesseract isn't exactly flawless when it comes to messy handwritten Turing Machines...). Moving forward, the user can request the model's OCR predictions. These will be displayed on the right-hand side. When hovering over a box or over the predicted text, the corresponding partner will also be highlighted. Mistakes made by the model can be easily amended by editing the text. Finally, the data can be saved both as a dataset for further training, or as part of a text file for posterior simulation.
 
-<!-- ![pic]({{site.baseurl}}/assets/images/thesis_explained/diagram.png) -->
-<img src='/src/assets/images/thesis_explained/diagram.png' alt='A summary diagram of the system'>
+![A summary diagram of the system](@assets/images/thesis_explained/diagram.png)
 _A summary diagram of the system, its modules and intercommunication._
 
 ## The Results

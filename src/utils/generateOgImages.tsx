@@ -1,26 +1,33 @@
 import satori, { type SatoriOptions } from "satori";
 import { Resvg } from "@resvg/resvg-js";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 import { type CollectionEntry } from "astro:content";
 import postOgImage from "./og-templates/post";
 import siteOgImage from "./og-templates/site";
 
-const fetchFonts = async () => {
-  // Regular Font
-  const fontFileRegular = await fetch(
-    "https://www.1001fonts.com/download/font/ibm-plex-mono.regular.ttf"
+const readFont = (fileName: string) =>
+  readFile(
+    path.join(
+      process.cwd(),
+      "node_modules",
+      "@fontsource",
+      "ibm-plex-mono",
+      "files",
+      fileName
+    )
   );
-  const fontRegular: ArrayBuffer = await fontFileRegular.arrayBuffer();
 
-  // Bold Font
-  const fontFileBold = await fetch(
-    "https://www.1001fonts.com/download/font/ibm-plex-mono.bold.ttf"
-  );
-  const fontBold: ArrayBuffer = await fontFileBold.arrayBuffer();
+const loadFonts = async () => {
+  const [fontRegular, fontBold] = await Promise.all([
+    readFont("ibm-plex-mono-latin-400-normal.woff"),
+    readFont("ibm-plex-mono-latin-600-normal.woff"),
+  ]);
 
   return { fontRegular, fontBold };
 };
 
-const { fontRegular, fontBold } = await fetchFonts();
+const { fontRegular, fontBold } = await loadFonts();
 
 const options: SatoriOptions = {
   width: 1200,

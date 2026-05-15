@@ -2,7 +2,7 @@
 title: I'm starting a blog!
 description: Why I decided to start writing
 pubDatetime: 2018-06-07
-tags: 
+tags:
   - life
 ---
 

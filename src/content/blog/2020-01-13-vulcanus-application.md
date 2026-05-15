@@ -2,7 +2,7 @@
 title: "Vulcanus in Japan: Application"
 description: What to do to maximize your chances of passing preselection
 pubDatetime: 2020-01-13
-tags: 
+tags:
   - life
 ---
 
