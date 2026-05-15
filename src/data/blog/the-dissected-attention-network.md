@@ -614,7 +614,7 @@ plt.matshow(attention)
 
     <matplotlib.image.AxesImage at 0x1d78d10f588>
 
-![Attention weights heatmap](@assets/images/dissected-attention/attention-network-80-1.png)
+![Attention weights heatmap](../../assets/images/dissected-attention/attention-network-80-1.png)
 
 For a more pleasant experience, where we label the axis with the actual words that composed the sentence, we can do something like the following.
 
@@ -650,4 +650,4 @@ ax.yaxis.set_major_locator(ticker.MultipleLocator(1))
 plt.show()
 ```
 
-![Attention output plot](@assets/images/dissected-attention/attention-network-83-0.png)
+![Attention output plot](../../assets/images/dissected-attention/attention-network-83-0.png)

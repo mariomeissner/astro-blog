@@ -14,11 +14,11 @@ Let's start by building an intuition and seeing the relationship between bias/va
 
 Let's assume that our ground truth (what we are ultimately trying to predict) looks a bit like the following:
 
-![Ground truth](@assets/images/bias-variance/simple_complex_ground.png)
+![Ground truth](../../assets/images/bias-variance/simple_complex_ground.png)
 
 Now, most datasets can never truly represent the ground truth perfectly. In our case, we will take a sample of points, use it as a training set, and build our models with it. It could look like the following:
 
-![Training set](@assets/images/bias-variance/simple_complex.png)
+![Training set](../../assets/images/bias-variance/simple_complex.png)
 
 Two predictive models have been applied on the dataset. Each has its own characteristics and fits the data in a different way. Neither the simple nor the complex model are very correct, since one of them generalizes too much while the other is too precise.
 
@@ -46,7 +46,7 @@ The arguably best model for this data would be one that takes a slight curve upw
 
 The way people usually deal with this problem when they have to build complex models is to keep an eye on both trainig error and validation/test error.
 
-![Overfitting range](@assets/images/bias-variance/overfitting_range.jpg)
+![Overfitting range](../../assets/images/bias-variance/overfitting_range.jpg)
 
 While they both fall proportionally, the model is still underfitting and could do better. However, once the test error behaves differently than the training error (usually going up again), it's time to stop training because you will be overfitting from now on.
 
