@@ -23,8 +23,8 @@ pnpm-debug.log*
 # ignore .astro directory
 .astro
 
-# ignore Jampack cache files
-.jampack/
+# pagefind
+public/pagefind/
 
 # yarn
 .yarn/*
